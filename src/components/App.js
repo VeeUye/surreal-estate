@@ -1,7 +1,14 @@
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import NavBar from "./NavBar";
 import "../styles/app.css";
 
-function App() {
-  return <h1>Surreal Estate</h1>;
-}
+const App = () => {
+  return (
+    <BrowserRouter>
+      <NavBar />
+    </BrowserRouter>
+  );
+};
 
 export default App;

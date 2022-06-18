@@ -1,0 +1,36 @@
+.desktop-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.desktop-navbar-inner-left,
+.desktop-navbar-inner-right {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-navbar-inner-left {
+  justify-content: start;
+}
+
+.desktop-navbar-inner-right {
+  justify-content: flex-end;
+}
+
+.desktop-navbar-title {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+.desktop-navbar-links {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.desktop-navbar-links-item {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 2rem;
+}
