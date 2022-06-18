@@ -1,13 +1,23 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import "../styles/app.css";
+import Properties from "./Properties";
+import AddProperty from "./AddProperty";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
       <NavBar />
-    </BrowserRouter>
+      <Switch>
+        <Route exact path="/">
+          <Properties />
+        </Route>
+        <Route exact path="/add-property">
+          <AddProperty />
+        </Route>
+      </Switch>
+    </>
   );
 };
 
