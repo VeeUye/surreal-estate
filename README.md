@@ -20,6 +20,15 @@ The README will be updated as the prooject progresses.
 
 Create a property search engine similar to RightMove or Zoopla.
 
+### Learning Concepts 
+
+- Single Page Application (SPA)
+- Client-side Routing
+- Controlled Inputs
+- HTTP Requests
+- API Interaction
+- OAuth
+
 ## Technologies
 
 ### Language & Library
