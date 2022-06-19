@@ -22,6 +22,7 @@
 .desktop-navbar-title {
   font-size: 1.6rem;
   margin-left: 1rem;
+  color: #ff5a5f;
 }
 
 .desktop-navbar-links {
@@ -31,6 +32,13 @@
 
 .desktop-navbar-links-item {
   display: inline-block;
-  padding-right: 1rem;
-  padding-left: 2rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+  padding: 0rem 0.8rem;
+}
+
+.desktop-navbar-links-item:hover {
+  background: #e1e1e1;
+  border-radius: 3em;
+  transition: 0.25s ease-in-out background;
 }

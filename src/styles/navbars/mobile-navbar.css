@@ -7,7 +7,7 @@ li {
 .mobile-navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
 }
 
@@ -31,6 +31,7 @@ li {
 .mobile-navbar-title {
   padding-top: 0.5rem;
   font-size: 1.6rem;
+  color: #ff5a5f;
 }
 
 .mobile-navbar-links {
