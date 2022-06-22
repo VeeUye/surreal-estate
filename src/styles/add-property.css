@@ -1,5 +1,27 @@
 .add-property {
   padding: 1rem;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.add-property-form {
+  width: 100%;
+}
+
+.background-image-large-screen {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  border-radius: 8px;
+  height: 20%;
+}
+
+.background-image-large-screen > img {
+  display: block;
+  margin-left: 18rem;
+  border-radius: 8px;
 }
 
 .outer-input {
@@ -96,4 +118,21 @@ button {
 
 .page-header {
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 744px) {
+  .add-property {
+    width: 400px;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
+    z-index: 10;
+  }
+
+  .background-image-large-screen {
+    display: block;
+    z-index: 5;
+  }
 }
