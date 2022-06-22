@@ -1,3 +1,99 @@
 .add-property {
   padding: 1rem;
 }
+
+.outer-input {
+  display: inline-block;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  padding: 8px 16px;
+  width: 100%;
+  box-shadow: #dddddd 0 0 0 1px inset;
+}
+
+.split-outer-input {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  padding: 8px 16px;
+  width: 100%;
+  /* width: calc(100% - 1px); */
+  box-shadow: #dddddd 0 0 0 1px inset;
+}
+
+.city-dropdown {
+  display: inline-block;
+  width: 50%;
+}
+
+.type-dropdown {
+  display: inline-block;
+  width: 50%;
+}
+
+input {
+  outline: none;
+  border: none;
+  display: block;
+  text-indent: 3px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: grey;
+  width: 100%;
+}
+
+label {
+  display: block;
+  /* padding: 0.2rem; */
+  color: black;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-indent: 3px;
+}
+
+select {
+  display: block;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  margin: 0px;
+  width: 90%;
+  padding: 0px;
+  margin: 0px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: grey;
+  /* text-indent: -px; */
+}
+
+option {
+  display: block;
+  white-space: nowrap;
+  padding: 0px 2px 1px;
+}
+
+.divider {
+  height: 2.5rem;
+  border-right: 1px solid lightgray;
+  top: 3px;
+  right: 1rem;
+  position: relative;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 800;
+  background-color: #ff5a5f;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  padding: 8px 16px;
+}
+
+.page-header {
+  margin-bottom: 1rem;
+}
