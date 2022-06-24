@@ -7,8 +7,9 @@ li {
 .mobile-navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: white;
+  padding: 0.5rem;
 }
 
 .mobile-navbar-inner-left .mobile-navbar-inner-left {
@@ -34,13 +35,24 @@ li {
   color: #ff5a5f;
 }
 
+li:first-child {
+  padding-left: 0.8rem;
+}
+
 .mobile-navbar-links {
   display: flex;
-  font-size: 0.85rem;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .mobile-navbar-links-item {
   display: inline-block;
   padding-right: 1rem;
-  padding-bottom: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+.mobile-react-icon {
+  font-size: 10px;
 }

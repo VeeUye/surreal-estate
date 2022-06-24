@@ -1,5 +1,5 @@
 import React from "react";
-import { MdHouseSiding } from "react-icons/md";
+import { BiBuildingHouse } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import "../styles/navbars/mobile-navbar.css";
 
@@ -7,10 +7,9 @@ const MobileNavBar = () => {
   return (
     <div className="mobile-navbar">
       <div className="mobile-navbar-inner-left">
-        <MdHouseSiding />
+        <BiBuildingHouse className="mobile-react-icon" size="3rem" />
       </div>
       <div className="mobile-navbar-inner-right">
-        <h3 className="mobile-navbar-title">Surreal Estate</h3>
         <ul className="mobile-navbar-links">
           <li className="mobile-navbar-links-item">
             <Link className="text-link" to="/">
@@ -19,7 +18,7 @@ const MobileNavBar = () => {
           </li>
           <li className="mobile-navbar-links-item">
             <Link className="text-link" to="/add-property">
-              Add a Property
+              Add Properties
             </Link>
           </li>
         </ul>

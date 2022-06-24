@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HouseWoods from "../assets/images/house-woods.jpg";
+import axios from "axios";
 import "../styles/add-property.css";
 
 const AddProperty = () => {
@@ -15,7 +15,19 @@ const AddProperty = () => {
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-    console.log(fields);
+
+    // TODO move post request to seperate file
+
+    axios
+      .post("https://surreal-api.herokuapp.com/api/v1/PropertyListing/", fields)
+      .then((res) => {
+        console.log(res);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    // console.log(fields);
   };
 
   const handleFieldChange = (event) => {
@@ -24,11 +36,8 @@ const AddProperty = () => {
 
   return (
     <>
-      <div className="background-image-large-screen">
-        <img src={HouseWoods} alt="House in the woods" />
-      </div>
+      <div className="background" />
       <div className="add-property">
-        {/* <div className="add-property-form"> */}
         <h3 className="page-header">Add Property Details</h3>
         <form onSubmit={handleAddProperty}>
           {" "}
@@ -123,30 +132,6 @@ const AddProperty = () => {
               />
             </label>
           </div>
-          {/* <div className="split-outer-input">
-      <label htmlFor="price">
-        PRICE
-        <input
-          id="price"
-          type="number"
-          name="price"
-          value={fields.price}
-          placeholder="£1485"
-          onChange={handleFieldChange}
-        />
-      </label> */}
-          {/* <label htmlFor="email">
-        EMAIL
-        <input
-          id="email"
-          type="email"
-          name="email"
-          value={fields.email}
-          placeholder="zoopla.clone@rightmove.com"
-          onChange={handleFieldChange}
-        />
-      </label> */}
-          {/* </div> */}
           <div className="outer-input">
             <label htmlFor="email">
               EMAIL
@@ -162,7 +147,6 @@ const AddProperty = () => {
           </div>
           <button type="submit">Add</button>
         </form>
-        {/* </div> */}
       </div>
     </>
   );
