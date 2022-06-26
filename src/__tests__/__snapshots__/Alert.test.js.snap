@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Alert does not render an alert if message props is empty 1`] = `<DocumentFragment />`;
+
 exports[`Alert error renders correctly 1`] = `
 <DocumentFragment>
   <div

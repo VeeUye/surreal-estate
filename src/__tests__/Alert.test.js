@@ -37,3 +37,12 @@ describe("Alert success", () => {
     expect(getByText(/Success/).textContent).toBe("Success!");
   });
 });
+
+describe("Alert", () => {
+  it("does not render an alert if message props is empty", () => {
+    const { asFragment } = render(<Alert message="" />);
+    const alert = asFragment();
+
+    expect(alert).toMatchSnapshot();
+  });
+});

@@ -24,7 +24,7 @@ const AddProperty = () => {
   const handleAddProperty = (event) => {
     event.preventDefault();
     setAlert({ message: "", isSuccess: false });
-    postProperty(fields);
+    postProperty(fields, setAlert);
   };
 
   const handleFieldChange = (event) => {
@@ -35,7 +35,7 @@ const AddProperty = () => {
     <>
       <div className="background" />
       <div className="add-property">
-        <Alert />
+        <Alert message={alert.message} success={alert.isSuccess} />
         <h3 className="page-header">Add Property Details</h3>
         <form onSubmit={handleAddProperty}>
           {" "}
