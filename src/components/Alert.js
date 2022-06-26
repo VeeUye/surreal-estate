@@ -11,8 +11,12 @@ const Alert = ({ message, success }) => {
 };
 
 Alert.propTypes = {
-  message: PropTypes.string,
+  message: PropTypes.string.isRequired,
   success: PropTypes.bool,
-}.isRequired;
+};
+
+Alert.defaultProps = {
+  success: false,
+};
 
 export default Alert;

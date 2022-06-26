@@ -10,13 +10,20 @@ const AddProperty = () => {
       title: "",
       city: "Manchester",
     },
+    alert: {
+      message: "",
+      isSuccess: false,
+    },
   };
+
+  const [alert, setAlert] = useState(initialState.alert);
 
   // eslint-disable-next-line no-unused-vars
   const [fields, setFields] = useState(initialState.fields);
 
   const handleAddProperty = (event) => {
     event.preventDefault();
+    setAlert({ message: "", isSuccess: false });
     postProperty(fields);
   };
 
