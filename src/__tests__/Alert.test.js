@@ -3,6 +3,7 @@ import { render, screen } from "@testing-library/react";
 import Alert from "../components/Alert";
 
 describe("Alert error", () => {
+  //   const component = render(<Alert message="Error!" />);
   const validProps = {
     message: "Error!",
   };
@@ -13,9 +14,8 @@ describe("Alert error", () => {
   });
 
   it("displays an error when post is unsuccessful", () => {
-    const errorMessage = screen.getByText(/Error/i);
-    render(<Alert message={validProps.message} />);
+    const { getByText } = render(<Alert message={validProps.message} />);
 
-    expect(errorMessage).toBeInTheDocument();
+    expect(getByText(/Error/).textContent).toBe("Error!");
   });
 });
