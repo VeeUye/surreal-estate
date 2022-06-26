@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import axios from "axios";
 import postProperty from "../requests/postProperty";
 import "../styles/add-property.css";
+import Alert from "./Alert";
 
 const AddProperty = () => {
   const initialState = {
@@ -16,21 +17,7 @@ const AddProperty = () => {
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-
-    // TODO move post request to seperate file
-
     postProperty(fields);
-
-    // axios
-    //   .post("https://surreal-api.herokuapp.com/api/v1/PropertyListing/", fields)
-    //   .then((res) => {
-    //     console.log(res);
-    //     console.log(res.data);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-    // console.log(fields);
   };
 
   const handleFieldChange = (event) => {
@@ -41,6 +28,7 @@ const AddProperty = () => {
     <>
       <div className="background" />
       <div className="add-property">
+        <Alert />
         <h3 className="page-header">Add Property Details</h3>
         <form onSubmit={handleAddProperty}>
           {" "}

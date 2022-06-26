@@ -1,8 +1,14 @@
+import React from "react";
 import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 import App from "../components/App";
 
-test("renders learn react link", () => {
-  render(<App />);
-  const headerElement = screen.getByText(/Surreal Estate/i);
-  expect(headerElement).toBeInTheDocument();
+test("renders correctly", () => {
+  render(
+    <MemoryRouter>
+      <App />
+    </MemoryRouter>
+  );
+  const placeholder = screen.getByText(/Properties Page/i);
+  expect(placeholder).toBeInTheDocument();
 });

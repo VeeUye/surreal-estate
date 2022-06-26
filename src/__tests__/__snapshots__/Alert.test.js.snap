@@ -3,9 +3,19 @@
 exports[`Alert error renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="alert"
+    class="alert alert--error"
   >
     Error!
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert success renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="alert alert--success"
+  >
+    Success!
   </div>
 </DocumentFragment>
 `;
