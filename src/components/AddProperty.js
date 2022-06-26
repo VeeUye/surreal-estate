@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
+import postProperty from "../requests/postProperty";
 import "../styles/add-property.css";
 
 const AddProperty = () => {
@@ -18,15 +19,17 @@ const AddProperty = () => {
 
     // TODO move post request to seperate file
 
-    axios
-      .post("https://surreal-api.herokuapp.com/api/v1/PropertyListing/", fields)
-      .then((res) => {
-        console.log(res);
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    postProperty(fields);
+
+    // axios
+    //   .post("https://surreal-api.herokuapp.com/api/v1/PropertyListing/", fields)
+    //   .then((res) => {
+    //     console.log(res);
+    //     console.log(res.data);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
     // console.log(fields);
   };
 
