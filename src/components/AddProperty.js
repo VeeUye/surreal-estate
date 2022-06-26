@@ -35,7 +35,6 @@ const AddProperty = () => {
     <>
       <div className="background" />
       <div className="add-property">
-        <Alert message={alert.message} success={alert.isSuccess} />
         <h3 className="page-header">Add Property Details</h3>
         <form onSubmit={handleAddProperty}>
           {" "}
@@ -144,6 +143,7 @@ const AddProperty = () => {
             </label>
           </div>
           <button type="submit">Add</button>
+          <Alert message={alert.message} success={alert.isSuccess} />
         </form>
       </div>
     </>

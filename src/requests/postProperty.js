@@ -13,7 +13,7 @@ const addProperty = (fields, setAlert) => {
     })
     .catch((err) => {
       setAlert({
-        message: "Server Error. Pleae try again later",
+        message: "Server Error. Please try again later",
         isSuccess: false,
       });
       console.log(err);

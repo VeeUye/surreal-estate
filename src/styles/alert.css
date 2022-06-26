@@ -1,18 +1,20 @@
 .alert {
   margin-bottom: 1rem;
-  padding: 5px;
-  font-size: 20px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 100;
   min-width: 90%;
   border: 1px solid;
   border-radius: 8px;
 }
 
 .alert--success {
-  background-color: #96ffc5;
-  border-color: green;
+  background-color: #ebfff4;
+  border-color: #96ffc5;
 }
 
 .alert--error {
-  background-color: #ff9696;
-  border-color: red;
+  background-color: #ffebeb;
+  border-color: #ff9696;
 }
