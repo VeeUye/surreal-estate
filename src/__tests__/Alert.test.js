@@ -2,6 +2,8 @@ import React from "react";
 import { render } from "@testing-library/react";
 import Alert from "../components/Alert";
 
+// TODO - can I test by style? toHaveStyle
+
 describe("Alert", () => {
   const validProps = {
     alertFail: {
@@ -36,6 +38,10 @@ describe("Alert", () => {
     const { getByText } = render(
       <Alert message={validProps.alertFail.message} />
     );
+
+    // const errorMessage = getByText(/Error/);
+
+    // expect(errorMessage).toHaveStyle({ backgroundColor: "#ffebeb" });
 
     expect(getByText(/Error/).textContent).toBe("Error!");
   });

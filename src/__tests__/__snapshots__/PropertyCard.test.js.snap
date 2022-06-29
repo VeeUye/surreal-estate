@@ -2,8 +2,19 @@
 
 exports[`Property Card renders correctly 1`] = `
 <DocumentFragment>
-  <div>
-    Flat
+  <div
+    class="property-card"
+  >
+    <img
+      alt="interior of bedroom 2"
+      class="property-card property-card__img"
+      src="house-front.jpg"
+    />
+    <img
+      alt="Surreal Estate"
+      class="property-card property-card__se-logo"
+      src="[object Object]"
+    />
   </div>
 </DocumentFragment>
 `;

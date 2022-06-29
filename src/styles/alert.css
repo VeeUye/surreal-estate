@@ -15,6 +15,7 @@
 }
 
 .alert--error {
-  background-color: #ffebeb;
+  /* background-color: #ffebeb; */
+  background-color: rgb(255, 235, 235);
   border-color: #ff9696;
 }
